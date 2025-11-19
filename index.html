@@ -1,23 +1,52 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shahcode | Developer & Creator</title>
+  <meta name="description" content="Shahcode - Full-Stack Developer | Open Source Enthusiast | Building things on the internet"/>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="icon" href="https://github.com/shahcode.png" type="image/png"/>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="https://github.com/shahcode.png" alt="Shahcode" class="avatar"/>
+      <h1>Hi, I'm Shahcode 👋</h1>
+      <p class="tagline">Full-Stack Developer • Open Source Lover • Building cool stuff</p>
+    </header>
 
-<div class="home">
+    <section class="links">
+      <a href="https://github.com/shahcode" target="_blank" class="btn">GitHub</a>
+      <a href="https://linkedin.com/in/your-linkedin" target="_blank" class="btn">LinkedIn</a>
+      <a href="https://twitter.com/your-twitter" target="_blank" class="btn">Twitter / X</a>
+      <a href="mailto:your-email@gmail.com" class="btn">Email Me</a>
+      <a href="https://your-resume.pdf" target="_blank" class="btn resume">Résumé ↗</a>
+    </section>
 
-  <h1 class="page-heading">Posts</h1>
+    <section class="projects">
+      <h2>Featured Projects</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Project One</h3>
+          <p>Short description of your best project. Tech stack: React, Node.js, etc.</p>
+          <a href="https://github.com/shahcode/project-one" target="_blank">GitHub →</a>
+        </div>
+        <div class="card">
+          <h3>Project Two</h3>
+          <p>Another awesome thing you built. Add live link if deployed.</p>
+          <a href="https://project-two.live" target="_blank">Live Demo →</a>
+        </div>
+        <div class="card">
+          <h3>Coming Soon...</h3>
+          <p>More projects loading. Always building.</p>
+        </div>
+      </div>
+    </section>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+    <footer>
+      <p>Made with ❤️ and a lot of coffee • <a href="https://github.com/shahcode/shahcode.github.io">View source</a></p>
+    </footer>
+  </div>
+</body>
+</html>
